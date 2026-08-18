@@ -1,6 +1,3 @@
-# Analog-Signal-Processing
-Hardware-software platform for analyzing waveform transformations using analog circuits.
-
 ## Overview
 
 The system implements mathematical operations over
@@ -23,11 +20,11 @@ Signal differentiation
 
 ## Hardware
 
-Operational Amplifiers
-Resistors
-Capacitors
-Oscilloscope
-Signal Generator
+- Operational Amplifiers
+- Resistors
+- Capacitors
+- Oscilloscope
+- Signal Generator
 
 
 ## Software Integration
@@ -42,9 +39,7 @@ Signal Generator
  ↓
 Analog Processing Circuit
  ↓
-Data Acquisition
- ↓
-Python Visualization
+Oscilloscope Visualization
 
 
 ## Engineering Concepts
