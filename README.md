@@ -36,9 +36,13 @@ through the a wave visualizer desktop application.
 ## System Architecture
 
 Signal Generator
+
  ↓
+ 
 Analog Processing Circuit
+
  ↓
+ 
 Oscilloscope Visualization
 
 
