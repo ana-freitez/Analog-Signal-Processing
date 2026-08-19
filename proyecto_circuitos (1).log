@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.8.15)  19 AUG 2026 00:24
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.8.15)  19 AUG 2026 13:16
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -723,10 +723,18 @@ Package: inputenc 2024/02/08 v1.3d Input encoding file
 \inpenc@prehook=\toks36
 \inpenc@posthook=\toks37
 )
+(C:\Users\PCKR\AppData\Local\Programs\MiKTeX\tex/latex/float\float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count342
+\float@exts=\toks38
+\float@box=\box68
+\@float@everytoks=\toks39
+\@floatcapt=\box69
+)
 (C:\Users\PCKR\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdft
 ex.def
 File: l3backend-pdftex.def 2025-10-09 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count342
+\l__color_backend_stack_int=\count343
 ) (proyecto_circuitos (1).aux
 
 LaTeX Warning: Label `b3' multiply defined.
@@ -734,60 +742,53 @@ LaTeX Warning: Label `b3' multiply defined.
 )
 \openout1 = `"proyecto_circuitos (1).aux"'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
 
 -- Lines per column: 56 (exact).
 
 (C:\Users\PCKR\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mki
 i
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count343
+\scratchcounter=\count344
 \scratchdimen=\dimen297
-\scratchbox=\box68
-\nofMPsegments=\count344
-\nofMParguments=\count345
-\everyMPshowfont=\toks38
-\MPscratchCnt=\count346
+\scratchbox=\box70
+\nofMPsegments=\count345
+\nofMParguments=\count346
+\everyMPshowfont=\toks40
+\MPscratchCnt=\count347
 \MPscratchDim=\dimen298
-\MPnumerator=\count347
-\makeMPintoPDFobject=\count348
-\everyMPtoPDFconversion=\toks39
+\MPnumerator=\count348
+\makeMPintoPDFobject=\count349
+\everyMPtoPDFconversion=\toks41
 )
 (C:\Users\PCKR\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-ba
 se.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
- (C:\Users\PCKR\AppData\Local\Programs\MiKTeX\tex/latex/grfext\grfext.sty
-Package: grfext 2019/12/03 v1.3 Manage graphics extensions (HO)
-)
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 85.
-Package grfext Info: Graphics extension search list:
-(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
-G,.JBIG2,.JB2,.eps]
-(grfext)             \AppendGraphicsExtensions on input line 504.
 
 (C:\Users\PCKR\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.cf
 g
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-Package hyperref Info: Link coloring OFF on input line 14.
+Package hyperref Info: Link coloring OFF on input line 15.
  (proyecto_circuitos (1).out) (proyecto_circuitos (1).out)
 \@outlinefile=\write4
 \openout4 = `"proyecto_circuitos (1).out"'.
@@ -800,8 +801,8 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.17 
-     
+l.18 \author
+            {%
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
@@ -817,56 +818,72 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 52.
 (C:\Users\PCKR\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
+Underfull \hbox (badness 2865) in paragraph at lines 80--81
+\OT1/ptm/m/n/10 op-era-cional in-ver-sor (a ex-cepci[]on de la re-sisten-cia de
 
-LaTeX Warning: File `diagrama_circuito.png' not found on input line 121.
+ []
 
 
-! Package pdftex.def Error: File `diagrama_circuito.png' not found: using draft
- setting.
+Underfull \hbox (badness 10000) in paragraph at lines 80--81
+\OT1/ptm/m/n/10 retroal-i-mentaci[]on) y en la op-eraci[]on matem[]atica de
+ []
 
-See the pdftex.def package documentation for explanation.
+
+Underfull \hbox (badness 10000) in paragraph at lines 80--81
+
+ []
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.121 ...th=0.9\linewidth]{diagrama_circuito.png}}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+l.98 \textbf
+            {Fórmula de salida del amplificador derivador ideal}
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
 
-LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 1
-21.
-(C:\Users\PCKR\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1pcr.fd
-File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
-)
+<../Esquematico.png, id=80, 459.96844pt x 393.72093pt>
+File: ../Esquematico.png Graphic file (type png)
+<use ../Esquematico.png>
+Package pdftex.def Info: ../Esquematico.png  used on input line 155.
+(pdftex.def)             Requested size: 176.39923pt x 150.99727pt.
 [1{C:/Users/PCKR/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/PCK
 R/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}
 
 
-]
-<../Esquematico.png, id=101, 459.96844pt x 393.72093pt>
-File: ../Esquematico.png Graphic file (type png)
-<use ../Esquematico.png>
-Package pdftex.def Info: ../Esquematico.png  used on input line 163.
-(pdftex.def)             Requested size: 226.79846pt x 194.13849pt.
-<../Simulacion_osciloscopio.png, id=103, 516.42938pt x 333.49594pt>
+
+pdfTeX warning (ext4): destination with the same identifier (name{table.1}) has
+ been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.158 \end{figure}
+                  ]
+<../Simulacion_osciloscopio.png, id=107, 516.42938pt x 333.49594pt>
 File: ../Simulacion_osciloscopio.png Graphic file (type png)
 <use ../Simulacion_osciloscopio.png>
-Package pdftex.def Info: ../Simulacion_osciloscopio.png  used on input line 169
+Package pdftex.def Info: ../Simulacion_osciloscopio.png  used on input line 161
 .
 (pdftex.def)             Requested size: 176.39923pt x 113.91125pt.
-<../Montaje_fisico.jpeg, id=104, 1606.0pt x 1204.5pt>
+<../Montaje_fisico.jpeg, id=108, 1606.0pt x 1204.5pt>
 File: ../Montaje_fisico.jpeg Graphic file (type jpg)
 <use ../Montaje_fisico.jpeg>
-Package pdftex.def Info: ../Montaje_fisico.jpeg  used on input line 178.
+Package pdftex.def Info: ../Montaje_fisico.jpeg  used on input line 170.
 (pdftex.def)             Requested size: 176.39923pt x 132.29323pt.
-<../Proyecto_Circuitos2/PNG/Captura_osciloscopio_real.png, id=105, 803.0pt x 48
+<../Proyecto_Circuitos2/PNG/Captura_osciloscopio_real.png, id=109, 803.0pt x 48
 1.8pt>
 File: ../Proyecto_Circuitos2/PNG/Captura_osciloscopio_real.png Graphic file (ty
 pe png)
 <use ../Proyecto_Circuitos2/PNG/Captura_osciloscopio_real.png>
 Package pdftex.def Info: ../Proyecto_Circuitos2/PNG/Captura_osciloscopio_real.p
-ng  used on input line 185.
+ng  used on input line 177.
 (pdftex.def)             Requested size: 176.39923pt x 105.83458pt.
+
+Underfull \vbox (badness 4303) has occurred while \output is active []
+
 
 
 ** Conference Paper **
@@ -880,11 +897,41 @@ Before submitting the final camera ready copy, remember to:
  process uses the appropriate paper size.
 
 [2
+pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) ha
+s been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.222 \end{document}
+                    
+pdfTeX warning (ext4): destination with the same identifier (name{figure.2}) ha
+s been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.222 \end{document}
+                    
+pdfTeX warning (ext4): destination with the same identifier (name{figure.3}) ha
+s been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.222 \end{document}
+                    
+pdfTeX warning (ext4): destination with the same identifier (name{figure.4}) ha
+s been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.222 \end{document}
+                    
+pdfTeX warning (ext4): destination with the same identifier (name{table.2}) has
+ been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.222 \end{document}
+                    
 pdfTeX warning (ext4): destination with the same identifier (name{cite.b3}) has
  been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.230 \end{document}
+l.222 \end{document}
                      <../Esquematico.png> <../Simulacion_osciloscopio.png> <../
 Montaje_fisico.jpeg> <../Proyecto_Circuitos2/PNG/Captura_osciloscopio_real.png 
 (PNG copy)>] (proyecto_circuitos (1).aux)
@@ -901,11 +948,11 @@ d.
 (rerunfilecheck)             Checksum: 71E2F54BF00627320C4B502805EEFC99;2317.
  ) 
 Here is how much of TeX's memory you used:
- 21857 strings out of 467871
- 414517 string characters out of 5418860
- 811560 words of memory out of 5000000
- 50342 multiletter control sequences out of 15000+600000
- 666340 words of font info for 114 fonts, out of 8000000 for 9000
+ 21822 strings out of 467871
+ 413148 string characters out of 5418860
+ 817203 words of memory out of 5000000
+ 50310 multiletter control sequences out of 15000+600000
+ 665825 words of font info for 112 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  99i,12n,108p,435b,884s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/PCKR/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/c
@@ -919,14 +966,13 @@ rams/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/PCKR/AppData/Loca
 l/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/PCKR/AppDat
 a/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/PCK
 R/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Us
-ers/PCKR/AppData/Local/Programs/MiKTeX/fonts/type1/urw/courier/ucrr8a.pfb><C:/U
-sers/PCKR/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Us
-ers/PCKR/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmbi8a.pfb><C:/Us
-ers/PCKR/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Use
-rs/PCKR/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on "proyecto_circuitos (1).pdf" (2 pages, 474977 bytes).
+ers/PCKR/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Use
+rs/PCKR/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmbi8a.pfb><C:/Use
+rs/PCKR/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/User
+s/PCKR/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
+Output written on "proyecto_circuitos (1).pdf" (2 pages, 465342 bytes).
 PDF statistics:
- 195 PDF objects out of 1000 (max. 8388607)
- 33 named destinations out of 1000 (max. 500000)
+ 192 PDF objects out of 1000 (max. 8388607)
+ 35 named destinations out of 1000 (max. 500000)
  169 words of extra memory for PDF output out of 10000 (max. 10000000)
 
