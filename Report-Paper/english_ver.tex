@@ -1,0 +1,204 @@
+\documentclass[conference]{IEEEtran}
+\IEEEoverridecommandlockouts
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{orcidlink}
+\usepackage[utf8]{inputenc}
+\def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
+    T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
+\begin{document}
+
+\title{Signal Conversion Using Operational Amplifier Circuits}\\
+
+\author{%
+    \IEEEauthorblockN{Ana Freitez\, \orcidlink{0009-0009-6506-499X}}
+    \IEEEauthorblockA{\textit{School of Engineering} \\ 
+    \textit{Universidad Latina de Panamá} \\ 
+    Panama City, Panama}
+    \and
+    \IEEEauthorblockN{Cristell Cedeño\, \orcidlink{0009-0002-2617-663X}}
+    \IEEEauthorblockA{\textit{School of Engineering} \\ 
+    \textit{Universidad Latina de Panamá} \\ 
+    Panama City, Panama}
+}
+
+\maketitle
+
+\begin{abstract}
+% Resumen breve (150-250 palabras): objetivo del proyecto, circuito implementado
+% (integrador y derivador en cascada con amplificadores operacionales),
+% metodología utilizada (simulación y/o implementación física) y principales
+% resultados obtenidos.
+[Completar resumen del proyecto aquí.]
+\end{abstract}
+
+\begin{IEEEkeywords}
+amplificador operacional, integrador, derivador, procesamiento de señales, circuitos analógicos
+\end{IEEEkeywords}
+
+\section{Introducción}
+% Contexto general del tema, motivación del proyecto y objetivo principal.
+% Mencionar brevemente qué problema resuelve un circuito integrador/derivador
+% en cascada y por qué es relevante estudiarlo.
+[Completar introducción.]
+
+\subsection{Objetivos}
+\begin{itemize}
+    \item Objetivo general: [Completar]
+    \item Objetivos específicos:
+    \begin{itemize}
+        \item [Completar]
+        \item [Completar]
+    \end{itemize}
+\end{itemize}
+
+\section{Marco Teórico}
+% Explicar brevemente el principio de funcionamiento de un amplificador
+% operacional en configuración integradora y derivadora, incluyendo las
+% ecuaciones fundamentales.
+
+\subsection{Amplificador Integrador}
+[Completar explicación teórica del integrador. Incluir la ecuación característica.]
+\begin{equation}
+V_{out}(t) = -\frac{1}{RC}\int V_{in}(t)\,dt
+\label{eq:integrador}
+\end{equation}
+
+\subsection{Amplificador Derivador}
+[Completar explicación teórica del derivador. Incluir la ecuación característica.]
+\begin{equation}
+V_{out}(t) = -RC\,\frac{dV_{in}(t)}{dt}
+\label{eq:derivador}
+\end{equation}
+
+\subsection{Consideraciones de Diseño Práctico}
+% Mencionar por qué se añaden componentes adicionales (resistencia en paralelo
+% al capacitor del integrador, resistencia en serie y capacitor en paralelo
+% en el derivador) para evitar saturación y ruido en la implementación real.
+[Completar.]
+
+\section{Metodología}
+
+\subsection{Diseño del Circuito}
+% Describir el diseño propuesto: etapa integradora seguida de etapa
+% derivadora en cascada. Referenciar la Fig.~\ref{fig:diagrama}.
+[Completar descripción del diseño.]
+
+\begin{figure}[htbp]
+\centerline{\includegraphics[width=0.9\linewidth]{diagrama_circuito.png}}
+\caption{Diagrama esquemático del circuito integrador-derivador en cascada.}
+\label{fig:diagrama}
+\end{figure}
+
+\subsection{Materiales y Equipo}
+% Completar la tabla con los componentes y equipos utilizados.
+\begin{table}[htbp]
+\caption{Lista de Materiales y Equipos}
+\label{tab:materiales}
+\centering
+\begin{tabular}{l l c}
+\hline
+\textbf{Componente} & \textbf{Especificación} & \textbf{Cantidad} \\
+\hline
+Amplificador operacional & 741 & 2 \\
+Resistencia & 10 k$\Omega$ & [Completar] \\
+Resistencia & 100 k$\Omega$ & [Completar] \\
+Capacitor & 0.1 $\mu$F & [Completar] \\
+Protoboard & -- & 1 \\
+Generador de señales & -- & 1 \\
+Osciloscopio & -- & 1 \\
+Fuente de alimentación & -- & [Completar] \\
+\hline
+\end{tabular}
+\end{table}
+
+\subsection{Procedimiento}
+% Describir paso a paso cómo se realizó la simulación y/o el montaje físico.
+\begin{enumerate}
+    \item [Completar]
+    \item [Completar]
+    \item [Completar]
+\end{enumerate}
+
+\section{Resultados}
+
+\subsection{Simulación}
+% Insertar capturas del circuito simulado y del osciloscopio virtual.
+[Completar descripción de los resultados de simulación.]
+
+\begin{figure}[htbp]
+\centerline{\includegraphics[width=0.9\linewidth]{simulacion_esquematico.png}}
+\caption{Esquemático simulado en Proteus 8 Profesional.}
+\label{fig:sim_esq}
+\end{figure}
+
+\begin{figure}[htbp]
+\centerline{\includegraphics[width=0.9\linewidth]{simulacion_osciloscopio.png}}
+\caption{Formas de onda obtenidas en el osciloscopio virtual: señal de entrada, salida del integrador y salida del derivador.}
+\label{fig:sim_osc}
+\end{figure}
+
+\subsection{Implementación Física}
+% Insertar fotografías del montaje en protoboard y capturas del osciloscopio real.
+[Completar descripción del montaje físico.]
+
+\begin{figure}[htbp]
+\centerline{\includegraphics[width=0.9\linewidth]{montaje_protoboard.png}}
+\caption{Montaje físico del circuito en protoboard.}
+\label{fig:montaje}
+\end{figure}
+
+\begin{figure}[htbp]
+\centerline{\includegraphics[width=0.9\linewidth]{osciloscopio_real.png}}
+\caption{Capturas del osciloscopio real: (a) señal de entrada y salida del integrador; (b) salida del integrador y salida del derivador.}
+\label{fig:osc_real}
+\end{figure}
+
+\subsection{Datos Medidos}
+% Completar la tabla con los valores obtenidos en simulación y/o en el
+% laboratorio para distintas frecuencias de entrada.
+\begin{table}[htbp]
+\caption{Amplitudes de Salida Medidas en Función de la Frecuencia de Entrada}
+\label{tab:datos}
+\centering
+\begin{tabular}{c c c c}
+\hline
+\textbf{$f$ (Hz)} & \textbf{$V_{in}$ (V)} &
+\textbf{$V_{out,int}$ (V)} & \textbf{$V_{out,der}$ (V)}\\
+\hline
+25    & 4 & [Completar] & [Completar] \\
+50    & 4 & [Completar] & [Completar] \\
+100   & 4 & [Completar] & [Completar] \\
+200   & 4 & [Completar] & [Completar] \\
+500   & 4 & [Completar] & [Completar] \\
+1000  & 4 & [Completar] & [Completar] \\
+\hline
+\end{tabular}
+\end{table}
+
+\section{Análisis de Resultados}
+% Comparar los resultados de simulación con los resultados físicos.
+% Explicar cualquier diferencia observada (ruido, saturación, tolerancias
+% de componentes, etc.) y relacionarlos con la teoría de la Sección II.
+[Completar análisis comparando teoría, simulación e implementación física.]
+
+\section{Conclusiones}
+% Resumir los hallazgos principales y si se cumplieron los objetivos
+% planteados en la introducción.
+[Completar conclusiones.]
+
+\section*{Agradecimientos}
+[Completar, si aplica.]
+
+\begin{thebibliography}{00}
+\bibitem{b1} [Completar referencia 1.]
+\bibitem{b2} [Completar referencia 2.]
+\bibitem{b3} [Completar referencia 3.]
+\end{thebibliography}
+
+\end{document}
