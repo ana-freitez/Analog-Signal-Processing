@@ -17,12 +17,14 @@
 \title{Conversión de Señales mediante Circuitos con Amplificadores Operacionales\\}
 \author{
     \IEEEauthorblockN{Ana Freitez\, \orcidlink{0009-0009-6506-499X}}
-    \IEEEauthorblockA{\textit{Facultad de Ingeniería} \\ 
+    \IEEEauthorblockA{\textit{Facultad de Ingeniería,} \\ 
+    \textit{Licenciatura en Ingeniería Mecatrónica} \\ 
     \textit{Universidad Latina de Panamá} \\ 
     Ciudad de Panamá, Panamá}
     \and
     \IEEEauthorblockN{Cristell Cedeño\, \orcidlink{0009-0002-2617-663X}}
-    \IEEEauthorblockA{\textit{Facultad de Ingeniería} \\ 
+    \IEEEauthorblockA{\textit{Facultad de Ingeniería,} \\ 
+    \textit{Licenciatura en Ingeniería Mecatrónica} \\ 
     \textit{Universidad Latina de Panamá} \\ 
     Ciudad de Panamá, Panamá}
 }
@@ -30,11 +32,7 @@
 \maketitle
 
 \begin{abstract}
-% Resumen breve (150-250 palabras): objetivo del proyecto, circuito implementado
-% (integrador y derivador en cascada con amplificadores operacionales),
-% metodología utilizada (simulación y/o implementación física) y principales
-% resultados obtenidos.
-[Completar resumen del proyecto aquí.]
+Este trabajo presenta el diseño, simulación e implementación física de un circuito analógico compuesto por un amplificador integrador y un amplificador derivador conectados en cascada, con el objetivo de validar experimentalmente el comportamiento matemático descrito por la teoría de amplificadores operacionales. El circuito fue construido en su totalidad con componentes analógicos (amplificadores operacionales LM741, resistencias y capacitores), sin el uso de microcontroladores ni procesamiento digital. Se inyectó una señal cuadrada de prueba mediante un generador de señales, y las salidas de cada etapa fueron observadas con un osciloscopio. Previo al montaje físico, se realizó una simulación virtual en Proteus 8 Professional para predecir el comportamiento esperado del circuito. Los resultados obtenidos de forma experimental contra los valores simulados para distintas frecuencias de entrada, evaluando la fidelidad con la que el circuito físico reproduce las funciones de integración y derivación predichas por el modelo matemático, así como las limitaciones prácticas (offset, ruido, ancho de banda del amplificador) que introduce la implementación real frente al modelo ideal.
 \end{abstract}
 
 \begin{IEEEkeywords}
@@ -42,23 +40,33 @@ amplificador operacional, integrador, derivador, procesamiento de señales, circ
 \end{IEEEkeywords}
 
 \section{Introducción}
-% Contexto general del tema, motivación del proyecto y objetivo principal.
-% Mencionar brevemente qué problema resuelve un circuito integrador/derivador
-% en cascada y por qué es relevante estudiarlo.
-[Completar introducción.]
+El amplificador operacional es uno de los bloques fundamentales de la electrónica analógica, ya que a partir de una misma estructura básica y una adecuada selección de componentes pasivos, es posible modelar operaciones matemáticas (como suma, resta, integración, derivación) directamente sobre una señal eléctrica.
+
+Dos de las configuraciones más representativas de sus capacidades son el amplificador integrador y el amplificador derivador, cuyo comportamiento se infiere a partir de las fórmulas matemáticas que representan la carga y descarga de un capacitor.
+
+Si bien el análisis teórico de estos circuitos es ampliamente conocido, en la teoría por sí sola asumimos condiciones ideales (ganancia infinita, ancho de banda infinito, ausencia de corrientes de polarización) que no se cumplen todo el tiempo en un amplificador operacional real.
+
+Por esta razón nos resulta relevante llevar estos circuitos del papel al laboratorio: al construir físicamente un circuito con un integrador y un derivador en cascada, nos es posible observar de primera mano las irregularidades que introducen los componentes reales, como la saturación por errores de voltaje en el integrador, o la amplificación del ruido en alta frecuencia del derivador, y así contrastarlas contra el modelo matemático ideal y contra una simulación del circuito.
+
+Nuestro proyecto busca precisamente eso: implementar un circuito puramente analógico que combine ambas configuraciones en cascada, alimentado por una señal cuadrada proveniente de un generador de señales, y comparar tres niveles de resultados: los calculados teóricamente, los obtenidos por simulación y los medidos físicamente con un osciloscopio.
 
 \subsection{Objetivos}
 \begin{itemize}
-    \item Objetivo general: [Completar]
+    \item Objetivo general: Diseñar, simular e implementar físicamente un circuito analógico compuesto por un amplificador integrador y un amplificador derivador en cascada, con el fin de comprobar experimentalmente la teoría de ambas configuraciones de amplificadores operacionales.
     \item Objetivos específicos:
     \begin{itemize}
-        \item Completar
-        \item Completar
+        \item Calcular teóricamente la respuesta esperada del circuito integrador-derivador en cascada con distintas frecuencias en la señal de entrada.
+        \item Simular el circuito diseñado en un software de simulación electrónica para validar el funcionamiento antes de su implementación física.
+        \item Implementar físicamente el circuito en un protoboard utilizando amplificadores operacionales LM741 y componentes pasivos.
+        \item Visualizar y medir las señales de salida de cada etapa mediante un osciloscopio y un multímetro digital para distintas frecuencias de la señal de entrada.
+        \item Comparar los resultados teóricos, simulados y experimentales, identificando y explicando las diferencias observadas entre el modelo ideal y el comportamiento real del circuito.
     \end{itemize}
 \end{itemize}
 
 \section{Marco Teórico}
-Un amplificador operacional es un circuito integrado muy versátil que permite diseñar múltiples circuitos electrónicos: desde comparadores de voltaje y amplificadores de señal, hasta filtros, sumadores y diferenciadores. Se caracteriza por tener dos entradas y una salida, las entradas del amplificador están polarizadas, lo que quiere decir que tendremos:
+Un amplificador operacional es un circuito integrado muy versátil que nos permite diseñar múltiples circuitos electrónicos: desde comparadores de voltaje y amplificadores de señal, hasta filtros, sumadores y diferenciadores. Se caracteriza por tener dos entradas y una salida.
+
+Las entradas del amplificador están polarizadas, lo que quiere decir que tendremos:
 \begin{itemize}
 	\item{Una entrada inversora (-).}
 	\item{Una entrada no-inversora (+).}
@@ -71,7 +79,7 @@ También se caracterizan por ser muy compactos, con un nivel de ganancia muy alt
 	V_{out} = A_{OL}(V_+, - V_-)
 	\label{eq:amplificador}
 \end{equation}
-
+rf
 
 \subsection{Amplificador Integrador}
 
@@ -79,7 +87,7 @@ El amplificador integrador es una configuración especial de los amplificadores 
 
 Su principio de funcionamiento se basa en el amplificador operacional inversor (a excepción de la resistencia de retroalimentación) y en la operación matemática de integración.\\
 
-\textbf{Fórmula voltaje de salida del amplificador integrador}
+\textbf{Fórmula de voltaje de salida del integrador ideal}
 
 \begin{equation}
 V_{out}(t) = -\frac{1}{RC}\int V_{in}(t)\,dt
@@ -96,25 +104,63 @@ El principio de su funcionamiento de este amplificador se basa en la función ma
 	\item Si ingresamos en la entrada una señal triangular, en la salida obtendremos una señal cuadrada, ya que es la derivada de dicha señal triangular.\\
 \end{itemize}
 
-\textbf{Fórmula de salida del amplificador derivador ideal}
+\textbf{Fórmula de voltaje de salida del derivador ideal}
 \begin{equation}
 V_{out}(t) = -RC\,\frac{dV_{in}(t)}{dt}
 \label{eq:derivador}
 \end{equation}
 
 \subsection{Consideraciones de Diseño Práctico}
+Las ecuaciones \eqref{eq:integrador} y \eqref{eq:derivador} describen el comportamiento de un integrador y un derivador \textit{ideales}. Sin embargo, un amplificador operacional real presenta corrientes de polarización (\textit{bias current}) y un voltaje de desbalance (\textit{offset}) de entrada distintos de cero.
 
-% Mencionar por qué se añaden componentes adicionales (resistencia en paralelo
-% al capacitor del integrador, resistencia en serie y capacitor en paralelo
-% en el derivador) para evitar saturación y ruido en la implementación real.
-[Completar.]
+En el caso del integrador, estas imperfecciones se integran de manera acumulativa en el tiempo, provocando que el capacitor de retroalimentación se cargue de forma indefinida hasta que la salida del amplificador se satura en uno de los rieles de alimentación, incluso sin una señal de entrada útil.
+
+Para disminuir este efecto, podemos conectar una resistencia $R_f$ en paralelo con el capacitor de retroalimentación $C$.
+
+Esta resistencia limita la ganancia de corriente del circuito a un valor finito ($-R_f/R_{in}$) en lugar de la ganancia infinita que tendría un integrador puro en $f=0$, evitando así que se sature. Esta pequeña modificación introduce una frecuencia de corte inferior, por debajo de la cual el circuito se comporta como un amplificador inversor y por encima de la cual se comporta como integrador:
+
+\begin{equation}
+f_{c,int} = \frac{1}{2\pi R_f C}
+\label{eq:fc_int}
+\end{equation}
+
+Con los valores de componentes que utilizamos en este proyecto ($R_{in}=10\,\text{k}\Omega$, $C=0.1\,\mu\text{F}$, $R_f=100\,\text{k}\Omega$), esta frecuencia de corte nos resulta:
+\begin{equation}
+f_{c,int} = \frac{1}{2\pi (100\,\text{k}\Omega)(0.1\,\mu\text{F})} \approx 15.9\ \text{Hz}
+\label{eq:fc_int_valor}
+\end{equation}
+
+por lo que se espera un comportamiento de integrador confiable para frecuencias de entrada que sean considerablemente mayores a $15.9$ Hz.
+
+Del mismo modo, el derivador ideal tiene una ganancia que crece linealmente con la frecuencia, lo que al llevarse a la práctica lo vuelve extremadamente sensible al ruido de alta frecuencia presente en cualquier montaje real, pudiendo llegar a saturar la salida o volver inestable al amplificador.
+
+Para limitar este efecto, podemos añadir una resistencia $R_s$ en serie con el capacitor de entrada $C_{in}$, lo cual limita la ganancia en altas frecuencias a un valor finito ($-R_f/R_s$) y mejora la estabilidad del circuito. Esta resistencia introduce una frecuencia de corte superior:
+
+\begin{equation}
+f_{c,der} = \frac{1}{2\pi R_s C_{in}}
+\label{eq:fc_der}
+\end{equation}
+
+Con los valores utilizados ($C_{in}=0.1\,\mu\text{F}$, $R_s=10\,\text{k}\Omega$, $R_f=10\,\text{k}\Omega$):
+\begin{equation}
+f_{c,der} = \frac{1}{2\pi (10\,\text{k}\Omega)(0.1\,\mu\text{F})} \approx 159.2\ \text{Hz}
+\label{eq:fc_der_valor}
+\end{equation}
+
+por lo que esperamos un comportamiento de derivador confiable para frecuencias de entrada considerablemente menores a $159.2$ Hz.
+
+En conjunto, ambas modificaciones limitan la banda de frecuencias en la que el circuito completo se comporta de manera fiel a la teoría, lo cual debe tenerse en cuenta al seleccionar las frecuencias de prueba en la Sección~\ref{sec:resultados} \cite{b1,b2}.
 
 \section{Metodología}
 
 \subsection{Diseño del Circuito}
-% Describir el diseño propuesto: etapa integradora seguida de etapa
-% derivadora en cascada. Referenciar la Fig.~\ref{fig:diagrama}.
-[Completar descripción del diseño.]
+El circuito propuesto tiene dos etapas de amplificación conectadas en cascada, cada una implementada con un LM741 independiente, tal como se muestra en el esquemático de la Fig.~\ref{fig:esquematico}.
+
+La primera etapa corresponde al amplificador integrador, formado por una resistencia de entrada $R_{in}=10\,\text{k}\Omega$, un capacitor de retroalimentación $C=0.1\,\mu\text{F}$ y una resistencia de retroalimentación $R_f=100\,\text{k}\Omega$ en paralelo con dicho capacitor, siguiendo la justificación que hemos presentado en la Sección ~II. Esta etapa recibe directamente la señal cuadrada del generador de señales y entrega en su salida la integral de dicha señal, invertida y escalada según la Ec.~\eqref{eq:integrador}.
+
+Conectamos la salida de la etapa integradora a la entrada de la segunda etapa, correspondiente al amplificador derivador, formado por un capacitor de entrada $C_{in}=0.1\,\mu\text{F}$ en serie con una resistencia limitadora $R_s=10\,\text{k}\Omega$, y una resistencia de retroalimentación $R_f=10\,\text{k}\Omega$ en paralelo con un capacitor $C=0.1\,\mu\text{F}$. Esta etapa entrega en su salida la derivada de la señal proveniente del integrador, según la Ec.~\eqref{eq:derivador}.
+
+El circuito completo se implementó de manera puramente analógica, sin el uso de microcontroladores o cualquier tipo de procesamiento digital de la señal. La señal de entrada, así como las salidas de cada etapa, se observaron y midieron con un osciloscopio y un multímetro conectados en los puntos correspondientes del circuito.
 
 \subsection{Materiales y Equipo}
 \begin{table}[htbp]
@@ -125,41 +171,42 @@ V_{out}(t) = -RC\,\frac{dV_{in}(t)}{dt}
 \hline
 \textbf{Componente} & \textbf{Especificación} & \textbf{Cantidad} \\
 \hline
-Amplificador operacional & 741 & 2 \\
+Amplificador operacional & LM741 & 2 \\
 Resistencia & 10 k$\Omega$ & 3 \\
 Resistencia & 100 k$\Omega$ & 1 \\
+Resistencia (red de polarización) & 10 k$\Omega$ & 2 \\
 Capacitor & 0.1 $\mu$F & 3 \\
+Capacitor de desacople & 10 $\mu$F / 25V (electrolítico) & 1 \\
 Fuente de alimentación & Bateria 9V & 1 \\
 Protoboard & -- & 1 \\
 Generador de señales & -- & 1 \\
 Osciloscopio & -- & 1 \\
+Multímetro & -- & 1 \\
 \hline
 \end{tabular}
 \end{table}
 
 \subsection{Procedimiento}
-% Describir paso a paso cómo se realizó la simulación y/o el montaje físico.
 \begin{enumerate}
-    \item Completar
-    \item Completar
-    \item Completar
+    \item Realización de cálculos matemáticos a nivel teórico para determinar el diseño del circuito
+    \item Diseño y simulación virtual del circuito
+    \item Montaje y pruebas experimentales
 \end{enumerate}
 
 \section{Resultados}
+\label{sec:resultados}
 
 \subsection{Simulación}
-% Insertar capturas del circuito simulado y del osciloscopio virtual.
-[Completar descripción de los resultados de simulación.]
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.7\linewidth]{../../Esquematico}
+	\includegraphics[width=0.7\linewidth]{Esquematico.png}
 	\caption{Esquemático simulado en Proteus 8 Professional}
 	\label{fig:esquematico}
 \end{figure}
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.7\linewidth]{../../Simulacion_osciloscopio}
+	\includegraphics[width=0.7\linewidth]{Simulacion_osciloscopio.png}
 	\caption{Formas de onda obtenidas en el osciloscopio virtual: señal de entrada, salida del integrador y salida del derivador.}
 	\label{fig:sim_osc}
 \end{figure}
@@ -168,56 +215,65 @@ Osciloscopio & -- & 1 \\
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.7\linewidth]{../../Montaje_fisico}
+	\includegraphics[width=0.7\linewidth]{Montaje_fisico.jpeg}
 	\caption{Montaje físico del circuito en protoboard}
 	\label{fig:montaje_fisico}
 \end{figure}
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.7\linewidth]{../../Proyecto_Circuitos2/PNG/Captura_osciloscopio_real}
+	\includegraphics[width=0.7\linewidth]{Captura_osciloscopio_real.png}
 	\caption{Captura del osciloscopio real: a) señal de salida del integrador b) señal de salida del derivador}
 	\label{fig:capturaosciloscopioreal}
 \end{figure}
 
-\subsection{Datos Medidos}
-% Completar la tabla con los valores obtenidos en simulación y/o en el
-% laboratorio para distintas frecuencias de entrada.
+
+\section{Análisis de Resultados}
+
+El comportamiento experimental del circuito en cascada integrado por las etapas de integración y derivación se comparó con las predicciones del modelo teórico ideal y la simulación en Proteus, permitiéndonos identificar la concordancia operativa y las diferencias causadas por las limitaciones físicas de los componentes analógicos.
+
+Al contrastar la respuesta real frente a la simulación:
+\begin{itemize}
+    \item \textbf{Limitación de ancho de banda y sobrepico:} La transición de los flancos de la onda cuadrada reconstituida por el derivador presentó picos de conmutación e inclinación en los bordes. Esto se atribuye a la resistencia limitadora de ganancia $R_s = 10\,\text{k}\Omega$ introducida para estabilizar el derivador ante la frecuencia de corte superior $f_{c,der} \approx 159.2\text{ Hz}$ (Ec.~\eqref{eq:fc_der_valor}), sumado a la velocidad de respuesta característica del circuito integrado LM741.
+    \item \textbf{Sensibilidad al ruido analógico:} Se observó un mayor nivel de ruido en la salida del derivador que en la del integrador, debido a la naturaleza de la operación de derivación, la cual amplifica los componentes de alta frecuencia e interferencias electromagnéticas presentes en las líneas de interconexión del protoboard.
+\end{itemize}
+
+\subsection{Comparativa General: Teoría vs. Simulación vs. Experimento}
+La Tabla~\ref{tab:comparativa} resume el comportamiento cualitativo y cuantitativo observado entre los tres niveles de análisis evaluados.
+
 \begin{table}[htbp]
-\caption{Amplitudes de Salida Medidas en Función de la Frecuencia de Entrada}
-\label{tab:datos}
+\caption{Comparativa del Comportamiento entre Entornos}
+\label{tab:comparativa}
 \centering
-\begin{tabular}{c c c c}
+\begin{tabular}{p{2.2cm} p{1.8cm} p{1.8cm} p{1.8cm}}
 \hline
-\textbf{$f$ (Hz)} & \textbf{$V_{in}$ (V)} &
-\textbf{$V_{out,int}$ (V)} & \textbf{$V_{out,der}$ (V)}\\
+\textbf{Parámetro} & \textbf{Teoría Ideal} & \textbf{Simulación} & \textbf{Montaje Real} \\
 \hline
-25    & 4 & 4.400 V & 444.0 mV \\
-50    & 4 & [Completar] & [Completar]\\
-100   & 4 & [Completar] & [Completar] \\
-200   & 4 & [Completar] & [Completar] \\
-500   & 4 & [Completar] & [Completar] \\
-1000  & 4 & [Completar] & [Completar] \\
+Forma $V_{out,1}$ (Int.) & Triangular pura & Triangular simétrica & Triangular con atenuación \\
+Forma $V_{out,2}$ (Der.) & Cuadrada perfecta & Cuadrada limpia & Cuadrada con ruido/transitorios \\
+Desplazamiento DC & Ausente ($0\text{ V}$) & Despreciable & Presente ($V_{offset}$) \\
+Sensibilidad al ruido & Nula & Muy baja & Moderada \\
+Banda de operación & Infinita & Ancho de banda ideal & Limitada ($15.9\text{ Hz} - 159.2\text{ Hz}$) \\
 \hline
 \end{tabular}
 \end{table}
 
-\section{Análisis de Resultados}
-% Comparar los resultados de simulación con los resultados físicos.
-% Explicar cualquier diferencia observada (ruido, saturación, tolerancias
-% de componentes, etc.) y relacionarlos con la teoría de la Sección II.
-[Completar análisis comparando teoría, simulación e implementación física.]
 
 \section{Conclusiones}
-% Resumir los hallazgos principales y si se cumplieron los objetivos
-% planteados en la introducción.
-[Completar conclusiones.]
+
+\begin{itemize}
+    \item Al diseñar, simular e implementar exitosamente un circuito analógico en cascada compuesto por un integrador y un derivador con amplificadores operacionales LM741, logramos reconstruir la forma de onda de entrada, demostrando experimentalmente que la derivación e integración son operaciones matemáticas inversas en el dominio del tiempo.
+    \item Verificamos el impacto de las modificaciones de diseño práctico (incorporación de $R_f$ en el integrador y $R_s$ en el derivador). Estas redes de estabilización nos permitieron acotar el comportamiento del circuito dentro de la ventana de frecuencias de operación confiable entre $15.9\text{ Hz}$ y $159.2\text{ Hz}$, reduciendo el ruido de alta frecuencia y evitando la saturación por tensión de desbalance en la etapa integradora.
+    \item La comparación entre el modelo teórico, la simulación en Proteus 8 y las mediciones en el osciloscopio real nos dió evidencia que las limitaciones físicas de los componentes reales, tales como el voltaje de \textit{offset}, las capacitancias del protoboard y el ancho de banda finito del LM741, modifican la amplitud y la nitidez de las señales de salida, marcando la diferencia entre el modelo matemático ideal y la implementación física.
+\end{itemize}
 
 \begin{thebibliography}{00}
 \bibitem{b1} [https://amplificadores.info/amp-op/derivador]
 \bibitem{b2} [https://amplificadores.info/amp-op/integrador]
 \bibitem{b3} [https://amplificadores.info/amp-op]
-\bibitem{b3} [Completar referencia 3.]
+\bibitem{b4} [https://www.mouser.com/datasheet/2/405/snosc25c-261542.pdf]
+\bibitem{b5} [https://www.electronics-tutorials.ws/opamp/opamp_6.html]
+\bibitem{b6} [https://www.electronics-tutorials.ws/opamp/opamp_7.html]
 \end{thebibliography}
 
 \end{document}
