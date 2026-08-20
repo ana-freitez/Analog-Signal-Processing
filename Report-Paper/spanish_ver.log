@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.8.15)  20 AUG 2026 17:59
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.8.15)  20 AUG 2026 18:01
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -837,17 +837,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 104--105
 
 [2]
 
-LaTeX Warning: File `Esquematico.png' not found on input line 201.
+LaTeX Warning: File `Images/Esquematico.png' not found on input line 201.
 
 
-! Package pdftex.def Error: File `Esquematico.png' not found: using draft setti
-ng.
+! Package pdftex.def Error: File `Images/Esquematico.png' not found: using draf
+t setting.
 
 See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.201 ...ics[width=0.7\linewidth]{Esquematico.png}
+l.201 ...th=0.7\linewidth]{Images/Esquematico.png}
                                                   
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -858,17 +858,18 @@ LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 2
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 )
 
-LaTeX Warning: File `Simulacion_osciloscopio.png' not found on input line 207.
+LaTeX Warning: File `Images/Simulacion_osciloscopio.png' not found on input lin
+e 207.
 
 
-! Package pdftex.def Error: File `Simulacion_osciloscopio.png' not found: using
- draft setting.
+! Package pdftex.def Error: File `Images/Simulacion_osciloscopio.png' not found
+: using draft setting.
 
 See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.207 ...7\linewidth]{Simulacion_osciloscopio.png}
+l.207 ...idth]{Images/Simulacion_osciloscopio.png}
                                                   
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -878,17 +879,17 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-LaTeX Warning: File `Montaje_fisico.jpg' not found on input line 216.
+LaTeX Warning: File `Images/Montaje_fisico.jpg' not found on input line 216.
 
 
-! Package pdftex.def Error: File `Montaje_fisico.jpg' not found: using draft se
-tting.
+! Package pdftex.def Error: File `Images/Montaje_fisico.jpg' not found: using d
+raft setting.
 
 See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.216 ...[width=0.7\linewidth]{Montaje_fisico.jpg}
+l.216 ...0.7\linewidth]{Images/Montaje_fisico.jpg}
                                                   
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -916,18 +917,18 @@ s been already used, duplicate ignored
 l.220 
       ]
 
-LaTeX Warning: File `Captura_osciloscopio_real.png' not found on input line 223
-.
+LaTeX Warning: File `Images/Captura_osciloscopio_real.png' not found on input l
+ine 223.
 
 
-! Package pdftex.def Error: File `Captura_osciloscopio_real.png' not found: usi
-ng draft setting.
+! Package pdftex.def Error: File `Images/Captura_osciloscopio_real.png' not fou
+nd: using draft setting.
 
 See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.223 ...linewidth]{Captura_osciloscopio_real.png}
+l.223 ...th]{Images/Captura_osciloscopio_real.png}
                                                   
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -1108,12 +1109,12 @@ Package rerunfilecheck Info: File `spanish_ver.out' has not changed.
  ) 
 Here is how much of TeX's memory you used:
  21945 strings out of 467871
- 415769 string characters out of 5418860
+ 416609 string characters out of 5418860
  815343 words of memory out of 5000000
  50419 multiletter control sequences out of 15000+600000
  666847 words of font info for 115 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 99i,14n,108p,1244b,884s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 99i,14n,108p,1246b,884s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/PCKR/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/c
 mex10.pfb><C:/Users/PCKR/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfo
 nts/cm/cmmi10.pfb><C:/Users/PCKR/AppData/Local/Programs/MiKTeX/fonts/type1/publ
@@ -1133,7 +1134,7 @@ r8a.pfb><C:/Users/PCKR/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb
 8a.pfb><C:/Users/PCKR/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8
 a.pfb><C:/Users/PCKR/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8
 a.pfb>
-Output written on spanish_ver.pdf (4 pages, 220975 bytes).
+Output written on spanish_ver.pdf (4 pages, 221165 bytes).
 PDF statistics:
  229 PDF objects out of 1000 (max. 8388607)
  44 named destinations out of 1000 (max. 500000)
