@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.8.15)  19 AUG 2026 13:34
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.8.15)  20 AUG 2026 17:59
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -735,11 +735,7 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 ex.def
 File: l3backend-pdftex.def 2025-10-09 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count343
-) (spanish_ver.aux
-
-LaTeX Warning: Label `b3' multiply defined.
-
-)
+) (spanish_ver.aux)
 \openout1 = `spanish_ver.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 15.
@@ -793,73 +789,285 @@ Package hyperref Info: Link coloring OFF on input line 15.
 \@outlinefile=\write4
 \openout4 = `spanish_ver.out'.
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 52.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 55.
 
 
 (C:\Users\PCKR\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 52.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 55.
 
 
 (C:\Users\PCKR\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Underfull \hbox (badness 2865) in paragraph at lines 80--81
+Underfull \hbox (badness 6047) in paragraph at lines 55--56
+[]\OT1/ptm/m/n/10 Objetivo gen-eral: Dise[]nar, sim-u-lar e im-ple-men-tar
+ []
+
+
+Underfull \hbox (badness 2158) in paragraph at lines 67--68
+[]\OT1/ptm/m/n/10 Un am-pli-fi-cador op-era-cional es un cir-cuito in-te-grado
+ []
+
+[1{C:/Users/PCKR/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/PCK
+R/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}
+
+
+]
+Underfull \hbox (badness 2865) in paragraph at lines 88--89
 \OT1/ptm/m/n/10 op-era-cional in-ver-sor (a ex-cepci[]on de la re-sisten-cia de
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 80--81
+Underfull \hbox (badness 10000) in paragraph at lines 88--89
 \OT1/ptm/m/n/10 retroal-i-mentaci[]on) y en la op-eraci[]on matem[]atica de
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 80--81
+Underfull \hbox (badness 10000) in paragraph at lines 88--89
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 96--97
+Underfull \hbox (badness 10000) in paragraph at lines 104--105
 
  []
 
-<../../Esquematico.png, id=80, 459.96844pt x 393.72093pt>
-File: ../../Esquematico.png Graphic file (type png)
-<use ../../Esquematico.png>
-Package pdftex.def Info: ../../Esquematico.png  used on input line 156.
-(pdftex.def)             Requested size: 176.39923pt x 150.99727pt.
-[1{C:/Users/PCKR/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/PCK
-R/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}
+[2]
+
+LaTeX Warning: File `Esquematico.png' not found on input line 201.
+
+
+! Package pdftex.def Error: File `Esquematico.png' not found: using draft setti
+ng.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.201 ...ics[width=0.7\linewidth]{Esquematico.png}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 2
+01.
+(C:\Users\PCKR\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1pcr.fd
+File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
+)
+
+LaTeX Warning: File `Simulacion_osciloscopio.png' not found on input line 207.
+
+
+! Package pdftex.def Error: File `Simulacion_osciloscopio.png' not found: using
+ draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.207 ...7\linewidth]{Simulacion_osciloscopio.png}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
+LaTeX Warning: File `Montaje_fisico.jpg' not found on input line 216.
+
+
+! Package pdftex.def Error: File `Montaje_fisico.jpg' not found: using draft se
+tting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.216 ...[width=0.7\linewidth]{Montaje_fisico.jpg}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [3
 pdfTeX warning (ext4): destination with the same identifier (name{table.1}) has
  been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.159 \end{figure}
-                  ]
-<../../Simulacion_osciloscopio.png, id=107, 694.595pt x 594.22pt>
-File: ../../Simulacion_osciloscopio.png Graphic file (type png)
-<use ../../Simulacion_osciloscopio.png>
-Package pdftex.def Info: ../../Simulacion_osciloscopio.png  used on input line 
-162.
-(pdftex.def)             Requested size: 176.39923pt x 150.903pt.
-<../../Montaje_fisico.jpeg, id=108, 1606.0pt x 1204.5pt>
-File: ../../Montaje_fisico.jpeg Graphic file (type jpg)
-<use ../../Montaje_fisico.jpeg>
-Package pdftex.def Info: ../../Montaje_fisico.jpeg  used on input line 171.
-(pdftex.def)             Requested size: 176.39923pt x 132.29323pt.
-<../../Proyecto_Circuitos2/PNG/Captura_osciloscopio_real.png, id=109, 803.0pt x
- 481.8pt>
-File: ../../Proyecto_Circuitos2/PNG/Captura_osciloscopio_real.png Graphic file 
-(type png)
-<use ../../Proyecto_Circuitos2/PNG/Captura_osciloscopio_real.png>
-Package pdftex.def Info: ../../Proyecto_Circuitos2/PNG/Captura_osciloscopio_rea
-l.png  used on input line 178.
-(pdftex.def)             Requested size: 176.39923pt x 105.83458pt.
+l.220 
+      
+pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) ha
+s been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.220 
+      
+pdfTeX warning (ext4): destination with the same identifier (name{figure.2}) ha
+s been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.220 
+      ]
+
+LaTeX Warning: File `Captura_osciloscopio_real.png' not found on input line 223
+.
+
+
+! Package pdftex.def Error: File `Captura_osciloscopio_real.png' not found: usi
+ng draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.223 ...linewidth]{Captura_osciloscopio_real.png}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 250--250
+[]\OT1/ptm/m/n/8 Forma $\OML/cmm/m/it/8 V[]$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 250--250
+[]\OT1/ptm/m/n/8 Triangular
+ []
+
+
+Underfull \hbox (badness 2221) in paragraph at lines 250--251
+[]\OT1/ptm/m/n/8 Triangular con
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 251--251
+[]\OT1/ptm/m/n/8 Forma $\OML/cmm/m/it/8 V[]$
+ []
+
+
+Underfull \hbox (badness 7397) in paragraph at lines 251--251
+[]\OT1/ptm/m/n/8 Cuadrada per-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 251--251
+[]\OT1/ptm/m/n/8 Cuadrada
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 251--252
+[]\OT1/ptm/m/n/8 Cuadrada con
+ []
+
+
+Overfull \hbox (3.89621pt too wide) in paragraph at lines 251--252
+\OT1/ptm/m/n/8 ruido/transitorios| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 252--252
+[]\OT1/ptm/m/n/8 Desplazamiento
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 252--253
+[]\OT1/ptm/m/n/8 Presente
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 253--253
+[]\OT1/ptm/m/n/8 Sensibilidad al
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 254--254
+[]\OT1/ptm/m/n/8 Banda de
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 254--254
+[]\OT1/ptm/m/n/8 Ancho de
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 254--255
+[]\OT1/ptm/m/n/8 Limitada
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 254--255
+\OT1/ptm/m/n/8 ($\OT1/cmr/m/n/8 15\OML/cmm/m/it/8 :\OT1/cmr/m/n/8 9[] \OMS/cmsy
+/m/n/8 ^^@
+ []
+
+
+Overfull \hbox (12.24109pt too wide) in paragraph at lines 246--257
+ [][] 
+ []
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.273 ...www.electronics-tutorials.ws/opamp/opamp_
+                                                  6.html]
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+! LaTeX Error: Command \item invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.274 \bibitem{b6}
+                   [https://www.electronics-tutorials.ws/opamp/opamp_7.html]
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.274 \bibitem{b6}
+                   [https://www.electronics-tutorials.ws/opamp/opamp_7.html]
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.274 ...www.electronics-tutorials.ws/opamp/opamp_
+                                                  7.html]
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+! LaTeX Error: Command \end{thebibliography} invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.275 \end{thebibliography}
+                           
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.275 \end{thebibliography}
+                           
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
 
 
 ** Conference Paper **
@@ -872,64 +1080,40 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-[2
-pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) ha
-s been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.223 \end{document}
-                    
-pdfTeX warning (ext4): destination with the same identifier (name{figure.2}) ha
-s been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.223 \end{document}
-                    
+[4
 pdfTeX warning (ext4): destination with the same identifier (name{figure.3}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.223 \end{document}
+l.277 \end{document}
                     
 pdfTeX warning (ext4): destination with the same identifier (name{figure.4}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.223 \end{document}
+l.277 \end{document}
                     
 pdfTeX warning (ext4): destination with the same identifier (name{table.2}) has
  been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.223 \end{document}
-                    
-pdfTeX warning (ext4): destination with the same identifier (name{cite.b3}) has
- been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.223 \end{document}
-                     <../../Esquematico.png> <../../Simulacion_osciloscopio.png
-> <../../Montaje_fisico.jpeg> <../../Proyecto_Circuitos2/PNG/Captura_osciloscop
-io_real.png (PNG copy)>] (spanish_ver.aux)
+l.277 \end{document}
+                    ] (spanish_ver.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2025-12-24>
  ***********
-
-
-LaTeX Warning: There were multiply-defined labels.
-
 Package rerunfilecheck Info: File `spanish_ver.out' has not changed.
-(rerunfilecheck)             Checksum: 71E2F54BF00627320C4B502805EEFC99;2317.
+(rerunfilecheck)             Checksum: 2632A35DD97A9480FFD5A887EF0A0A77;2563.
  ) 
 Here is how much of TeX's memory you used:
- 21819 strings out of 467871
- 413078 string characters out of 5418860
- 817056 words of memory out of 5000000
- 50307 multiletter control sequences out of 15000+600000
- 665825 words of font info for 112 fonts, out of 8000000 for 9000
+ 21945 strings out of 467871
+ 415769 string characters out of 5418860
+ 815343 words of memory out of 5000000
+ 50419 multiletter control sequences out of 15000+600000
+ 666847 words of font info for 115 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 99i,12n,108p,422b,884s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 99i,14n,108p,1244b,884s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/PCKR/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/c
 mex10.pfb><C:/Users/PCKR/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfo
 nts/cm/cmmi10.pfb><C:/Users/PCKR/AppData/Local/Programs/MiKTeX/fonts/type1/publ
@@ -937,17 +1121,21 @@ ic/amsfonts/cm/cmmi6.pfb><C:/Users/PCKR/AppData/Local/Programs/MiKTeX/fonts/typ
 e1/public/amsfonts/cm/cmmi7.pfb><C:/Users/PCKR/AppData/Local/Programs/MiKTeX/fo
 nts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/PCKR/AppData/Local/Programs/Mi
 KTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/PCKR/AppData/Local/Prog
-rams/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/PCKR/AppData/Loca
-l/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/PCKR/AppDat
-a/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/PCK
-R/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Us
-ers/PCKR/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Use
-rs/PCKR/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmbi8a.pfb><C:/Use
-rs/PCKR/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/User
-s/PCKR/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on spanish_ver.pdf (2 pages, 547975 bytes).
+rams/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/PCKR/AppData/Loca
+l/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/PCKR/AppDat
+a/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/PCKR/
+AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Use
+rs/PCKR/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
+<C:/Users/PCKR/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cms
+y8.pfb><C:/Users/PCKR/AppData/Local/Programs/MiKTeX/fonts/type1/urw/courier/ucr
+r8a.pfb><C:/Users/PCKR/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb
+8a.pfb><C:/Users/PCKR/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmbi
+8a.pfb><C:/Users/PCKR/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8
+a.pfb><C:/Users/PCKR/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8
+a.pfb>
+Output written on spanish_ver.pdf (4 pages, 220975 bytes).
 PDF statistics:
- 191 PDF objects out of 1000 (max. 8388607)
- 35 named destinations out of 1000 (max. 500000)
- 169 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 229 PDF objects out of 1000 (max. 8388607)
+ 44 named destinations out of 1000 (max. 500000)
+ 149 words of extra memory for PDF output out of 10000 (max. 10000000)
 
