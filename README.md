@@ -1,4 +1,4 @@
-# ⚡ Analog Overcurrent Protector for DC Motors
+# ⚡ Analog Signal Processing Circuit
 
 <p align="center">
 
